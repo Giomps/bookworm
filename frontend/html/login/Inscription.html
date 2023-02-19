@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../pic/livre.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/login/Inscription.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="site_title">
+            <h2>BookWorm</h2>
+            <i><img style="height: 40px;width: 40px;" src="../pic//livre.ico" /></i>
+          </div>
+          <div class='openMenu'>
+            <a href="/">Accueil</a>
+            <a href="/connexion">Se connecter</p>
+            <div class="panier_section">
+                <a href="/panier">Mon panier</a>
+                <p>0</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section>
+      <header>
+        <h1>Inscription</h1>
+    </header>
+    <section>
+        <form method='POST'  class='form'>
+            <div class='form_nom' required>
+                <label>Nom</label>
+            </div>
+            <div class='form_input'> 
+                <input type='text' />
+            </div>
+            <div class='form_prenom'>
+                <label>Prenom</label>
+            </div>
+            <div class='form_input'>
+                <input type='text' name='prenom'/>
+            </div>
+            <div class='form_sexe'>
+                <label>Sexe</label>
+            </div>
+            <div class='form_input'>
+                <input type='checkbox' value={homme} name='Homme' />
+                <label>Homme</label>
+                <input type='checkbox' value={femme} name='Femme' />
+                <label>Femme</label>
+            </div>
+            <div class='form_password'>
+                <label>Mot de passe</label>
+            </div>
+            <div class='form_input'>
+                <input type="password" name='password' />
+            </div>
+            <div class='form_adresse'>
+                <label>Adresse</label>
+            </div>
+            <div class='form_input'>
+                <input type='text' />
+            </div>
+            <div class='form_email'>
+                <label>Email</label>
+            </div>
+            <div class='form_input'>
+                <input type='email' name='email' />
+            </div>
+            <br/>
+            <div class='form_button'>
+                <input type="submit" value='Valider' />
+            </div>
+        </form>
+        <div class="inscription_link">
+            <p>Vous avez un compte ? <a href='/connexion'>cliquez ici !</a></p>
+        </div>
+        </section>
+    <footer>
+        <p>&copy; Copyright BookWorm 2023</p>
+        <div class='div_footer'>
+          <i><img src="../pic//logo_reseaux_sociaux/logo-de-lapplication-facebook.png"/></i>
+          <i><img src="../pic//logo_reseaux_sociaux/logo-instagram.png"/></i>
+          <i><img src="../pic/logo_reseaux_sociaux//logo-linkedin.png"/></i>
+          <i><img src="../pic/logo_reseaux_sociaux/signe-twitter.png" /></i>
+        </div>
+    </footer>
+</body>
+</html>
