@@ -30,20 +30,20 @@
         <header>
             <h1>Connexion</h1>
     </header>
-    </section>
     <section>
-        <form class='form' action="/connexion">
+        <div class="error"></div>
+        <form class='form' method="GET">
             <div class='form_email'>
                 <label>Email</label>
             </div>
             <div class='form_input'>
-                <input type='email' placeholder='exemple@hotmail.fr'/>
+                <input type='email' placeholder='exemple@hotmail.fr' class="email"/>
             </div>
             <div class='form_password'>
                 <label>Mot de passe</label>
             </div>
             <div class='form_input'>
-                <input type='password' password='******' /><br/>
+                <input type='password' password='******' class="password" /><br/>
             </div>
             <div class='form_button'>
                 <button>Valider</button>
@@ -63,4 +63,5 @@
         </div>
     </footer>
 </body>
+<script src="/frontend/js/Connexion.js"></script>
 </html>
